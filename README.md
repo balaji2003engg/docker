@@ -53,7 +53,7 @@ Remove all unused containers, networks, images (both dangling and unreferenced),
       
       
  #Custom image:
-  Modify the content of the nginx index.html and save it as separte image
+  Modify the content of the nginx index.html and save it as separate image
   
      1. Enter into the container
           docker exec -it containerID /bin/bash
