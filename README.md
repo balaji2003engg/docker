@@ -22,6 +22,10 @@ To show all the containers which include exited containers
     2. docker tag balaji2003engg/myimage:1.2   ( docker tag accountid/imagename:version)
     3. docker push balaji2003engg/myimage:1.2
 
+Run the docker hub image into the container
+
+      docker run -d balaji2003engg/myimage:1.2
+
 Delete the images
 
       docker rmi -f dockerimageid
