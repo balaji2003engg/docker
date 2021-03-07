@@ -49,7 +49,7 @@ Volumes and Port Mapping
  
       docker run -d -p 81:80 -v /root/mynginx:/usr/share/nginx/html nginx
        
-       (docker run -d -p hostport:conatinerport -v hostmachinepath:conatinerpath dockerimage)
+       (docker run -d -p hostport:conatinerport -v hostmachinepath:containerpath dockerimage)
       
       
  
