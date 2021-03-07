@@ -44,7 +44,7 @@ Remove all unused containers, networks, images (both dangling and unreferenced),
                - all dangling images
                - all build cache
 
-Volumes and Port Mapping
+#Volumes and Port Mapping
  Run the docker  container of nginx image with port 81 and point out the volume of local machine to container
  
       docker run -d -p 81:80 -v /root/mynginx:/usr/share/nginx/html nginx
@@ -52,7 +52,7 @@ Volumes and Port Mapping
        (docker run -d -p hostport:conatinerport -v hostmachinepath:containerpath dockerimage)
       
       
- Custom image
+ #Custom image:
   Modify the content of the nginx index.html and save it as separte image
   
      1. Enter into the container
