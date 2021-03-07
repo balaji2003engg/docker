@@ -43,7 +43,17 @@ Remove all unused containers, networks, images (both dangling and unreferenced),
                - all networks not used by at least one container
                - all dangling images
                - all build cache
-Are you sure you want to continue? [y/N] y
+
+Volumes and Port Mapping
+ Run the docker  container of nginx image with port 81 and point out the volume of local machine to container
+ 
+      docker run -d -p 81:80 -v /root/mynginx:/usr/share/nginx/html nginx
+       
+       (docker run -d -p hostport:conatinerport -v hostmachinepath:conatinerpath dockerimage)
+      
+      
+ 
+
 
 
     
