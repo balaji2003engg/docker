@@ -52,7 +52,14 @@ Volumes and Port Mapping
        (docker run -d -p hostport:conatinerport -v hostmachinepath:containerpath dockerimage)
       
       
- 
+ Custom image
+  Modify the content of the nginx index.html and save it as separte image
+  
+     1. Enter into the container
+          docker exec -it containerID /bin/bash
+     2. Modify the content of the index.html in /usr/share/nginx/html     
+     3. Exit from the container and run the below to save it as separate image
+         docker commit containerID imagename:tag
 
 
 
