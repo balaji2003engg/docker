@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+  mynginx:
+    image: balaji2003engg/my:1
+    build: .
+    ports:
+      - "80"
+    deploy:
+       replicas: 2
+  myredis:
+    image: redis
