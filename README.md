@@ -62,5 +62,8 @@ Remove all unused containers, networks, images (both dangling and unreferenced),
          docker commit containerID imagename:tag
 
 
-
+#Docker build
+ 
+ Create the docker image using dockerfile
+ docker build -t imagename .
     
