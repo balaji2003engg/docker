@@ -19,7 +19,7 @@ To show all the containers which include exited containers
  Push image to the docker hub
  
     1. docker login ( Provide the dockerhub username and password)
-    2. docker tag balaji2003engg/myimage:1.2   ( docker tag accountid/imagename:version)
+    2. docker tag imageid balaji2003engg/myimage:1.2   ( docker tag accountid/imagename:version)
     3. docker push balaji2003engg/myimage:1.2
 
 Run the docker hub image into the container
