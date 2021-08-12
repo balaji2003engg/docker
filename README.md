@@ -62,13 +62,19 @@ Remove all unused containers, networks, images (both dangling and unreferenced),
          docker commit containerID imagename:tag
 
 
-#docker network
+#**docker network**
 
-docker network ls
+Check the docker networks
 
-docker network create -d bridge **mybridge**
+      docker network ls
 
-docker run -d --name imagename --network mybridge nginx
+Create the docker own bridge docker network
+
+      docker network create -d bridge **mybridge**
+
+Run the container with created network
+
+      docker run -d --name **imagename** --network **mybridge** nginx
 
 
 
