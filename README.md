@@ -76,7 +76,9 @@ Run the container with created network
 
       docker run -d --name **imagename** --network **mybridge** nginx
 
+Create the network with your own subnet
 
+    docker create network --driver=bridge --subnet= 10.2.0.0/28  mysubnet
 
 #Docker build
  
