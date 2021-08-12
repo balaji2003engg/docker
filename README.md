@@ -62,6 +62,16 @@ Remove all unused containers, networks, images (both dangling and unreferenced),
          docker commit containerID imagename:tag
 
 
+#docker network
+
+docker network ls
+
+docker network create -d bridge **mybridge**
+
+docker run -d --name imagename --network mybridge nginx
+
+
+
 #Docker build
  
  Create the docker image using dockerfile
