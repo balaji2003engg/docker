@@ -27,3 +27,19 @@ Push image to the docker hub
      docker-compose up -d --scale redis =2
      
      (docker-compose i -d --scale NameOfImageInDockercompose= number)
+
+stop the containers using docker compose
+    
+     docker-compose start mynginxservice
+     
+    ( docker-compose start **servicenameindockercomposefile**)
+    
+Start  the containers using docker compose    
+  
+      docker-compose stop mynginxservice
+      
+    ( docker-compose stop **servicenameindockercomposefile**)   
+    '
+Kill the containers using docker-compose
+
+    docker-compose kill
